@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="drkdagron.mtgapp.com.mtgapp.MainScreen"
+    android:id="@+id/mainLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/p1Area"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:id="@+id/p1Life"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="70dp"
+            android:textStyle="bold"
+            android:rotation="180"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:id="@+id/p1Sub1"
+            android:textSize="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/p1Add1"
+            android:textSize="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:rotation="180"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-5"
+            android:id="@+id/p1Sub5"
+            android:textSize="40dp"
+            android:layout_below="@+id/p1Sub1"
+            android:layout_alignRight="@+id/p1Sub1"
+            android:layout_alignEnd="@+id/p1Sub1"
+            android:rotation="180"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+5"
+            android:id="@+id/p1Add5"
+            android:textSize="40dp"
+            android:rotation="180"
+            android:layout_below="@+id/p1Add1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life"
+            android:id="@+id/p1LBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poison"
+            android:id="@+id/p1PBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/p1LBtn"
+            android:layout_toStartOf="@+id/p1LBtn"
+            android:rotation="180"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/p1buf"
+            android:layout_alignTop="@+id/p1PBtn"
+            android:layout_toLeftOf="@+id/p1PBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:rotation="180"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/p2Area"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:id="@+id/p2Life"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="70dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-1"
+            android:id="@+id/p2Sub1"
+            android:textSize="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"
+            android:id="@+id/p2Add1"
+            android:textSize="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+5"
+            android:id="@+id/p2Add5"
+            android:textSize="40dp"
+            android:layout_above="@+id/p2Add1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-5"
+            android:id="@+id/p2Sub5"
+            android:textSize="40dp"
+            android:layout_above="@+id/p2Sub1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life"
+            android:id="@+id/p2LBtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poison"
+            android:id="@+id/p2PBtn"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/p2LBtn"
+            android:layout_toEndOf="@+id/p2LBtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="0"
+            android:id="@+id/p2buf"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/p2PBtn"
+            android:layout_alignBottom="@+id/p2PBtn"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</LinearLayout>
